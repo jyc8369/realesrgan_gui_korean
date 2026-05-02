@@ -3,27 +3,11 @@ import configparser
 import ctypes
 import itertools
 import locale
+import notifypy
 import os
 import re
 import sys
 import tempfile
-
-if os.name == "nt":
-    import ctypes
-    try:
-        # fix High DPI (HiDPI) scaling issues in TkinterDnD2
-        ctypes.windll.shcore.SetProcessDpiAwareness(1)  # 1 = System Aware
-    except Exception:
-        ctypes.windll.user32.SetProcessDPIAware()  # Fallback for older Windows
-
-if sys.platform != 'darwin':
-    import notifypy
-    # fix: UnsupportedPlatform exception on Windows 11 and Python 3.12 by TransparentLC · Pull Request #55 · ms7m/notify-py
-    # https://github.com/ms7m/notify-py/pull/55
-    # Temporary fix:
-    import functools
-    notifypy.Notify._selected_notification_system = functools.partial(notifypy.Notify._selected_notification_system, override_windows_version_detection=True)
-
 import time
 import threading
 import tkinter as tk
@@ -42,6 +26,14 @@ import define
 import i18n
 import param
 import task
+
+if os.name == 'nt':
+    import ctypes
+    try:
+        # fix High DPI (HiDPI) scaling issues in TkinterDnD2
+        ctypes.windll.shcore.SetProcessDpiAwareness(1)  # 1 = System Aware
+    except Exception:
+        ctypes.windll.user32.SetProcessDPIAware()  # Fallback for older Windows
 
 # [error] exceeds limit of 178956970 pixels，能否扩大图片像素的限制呢，比如10亿像素。 · Issue #34 · TransparentLC/realesrgan-gui
 # https://github.com/TransparentLC/realesrgan-gui/issues/34
