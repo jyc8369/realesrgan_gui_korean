@@ -25,6 +25,7 @@ locales_map = {
     '中文 (繁體, 台灣)': 'zh_TW',
     'English (United States)': 'en_US',
     'English (United Kingdom)': 'en_GB',
+    'Korean (South Korea)': 'ko_KR',
     'українська (Україна)': 'uk_UA',
     'Türkçe (Türkiye)': 'tr_TR',
     'español (España)': 'es_ES',
