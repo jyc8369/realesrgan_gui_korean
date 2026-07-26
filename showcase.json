@@ -1,10 +1,11 @@
 {
-  "version": 1,
+  "version": 2,
   "repository": "realesrgan_gui_korean",
   "enabled": true,
   "featured": false,
   "order": 4,
   "category": "Project",
+  "title": "Real-ESRGAN GUI Korean",
   "summary": "A Korean desktop GUI for Real-ESRGAN that makes AI image upscaling easier to configure and run.",
   "tags": [
     "realesrgan",
@@ -12,6 +13,17 @@
     "gui",
     "korean"
   ],
+  "status": "active",
+  "platforms": [
+    "Windows"
+  ],
+  "highlights": [
+    "Korean desktop interface",
+    "Real-ESRGAN upscaling",
+    "Simplified local workflow"
+  ],
   "demoUrl": "",
-  "coverImage": ""
+  "downloadUrl": "https://github.com/jyc8369/realesrgan_gui_korean/releases",
+  "coverImage": "",
+  "accent": "neutral"
 }
