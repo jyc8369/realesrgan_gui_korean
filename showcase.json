@@ -5,8 +5,13 @@
   "featured": false,
   "order": 4,
   "category": "Project",
-  "summary": "",
-  "tags": [],
+  "summary": "A Korean desktop GUI for Real-ESRGAN that makes AI image upscaling easier to configure and run.",
+  "tags": [
+    "realesrgan",
+    "upscaling",
+    "gui",
+    "korean"
+  ],
   "demoUrl": "",
   "coverImage": ""
 }
